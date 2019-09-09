@@ -2,6 +2,7 @@
     &-slider {
         display: flex;
         justify-content: flex-end;
+        position: relative;
         &__item {
             position: relative;
             width: 1016px;
@@ -9,8 +10,8 @@
             background-image: url('/img/img/img-header.jpg');
             background-repeat: no-repeat;
             background-position: right;
-            background-size: cover;
-            
+            background-size: contain;
+            box-shadow: -16px 25px 65px rgba(11,12, 17, 0.2);            
         }
         &__headtitle {
             color: #5da8ef;
@@ -42,7 +43,63 @@
             left: -200px;
             top: 50%;
             transform: translateY(-50%);
-        
+        }
+        &__control {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 81px;
+            bottom: 0;
+            left: 0;
+        }
+        .slider {
+            &-control {
+                &__left {
+
+                }
+                &__right {
+
+                }
+                &__number {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 0.66px;
+                    letter-spacing: 4px;
+                    margin: 0 5px 5px 10px;
+                    text-transform: uppercase;
+                    &-active {
+                        color:#5da8ef;  
+                    }
+                    &-total {
+                        color: #262626;
+                    }
+                    &-from {
+                        color: #ebebeb;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.header {
+    &-social {
+        width: 5px;
+        position: absolute;
+        right: -45px;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        &__item {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

@@ -61,6 +61,35 @@ li {
   list-style: none;
 }
 
+.relative {
+  position: relative;
+}
+
+.side-content {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: -50px;
+  top: 58px;
+}
+
+.side-content__item {
+  color: rgba(11, 12, 17, 0.2);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transform: rotate(-90deg) translate(-1600%, 0);
+          transform: rotate(-90deg) translate(-1600%, 0);
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
 .hero-slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +97,7 @@ li {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
 }
 
 .hero-slider__item {
@@ -77,7 +107,9 @@ li {
   background-image: url("/img/img/img-header.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
+  background-size: contain;
+  -webkit-box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
+          box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
 }
 
 .hero-slider__headtitle {
@@ -113,5 +145,71 @@ li {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.hero-slider__control {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 81px;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-slider .slider-control__number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0.66px;
+  letter-spacing: 4px;
+  margin: 0 5px 5px 10px;
+  text-transform: uppercase;
+}
+
+.hero-slider .slider-control__number-active {
+  color: #5da8ef;
+}
+
+.hero-slider .slider-control__number-total {
+  color: #262626;
+}
+
+.hero-slider .slider-control__number-from {
+  color: #ebebeb;
+}
+
+.header-social {
+  width: 5px;
+  position: absolute;
+  right: -45px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-social__item {
+  margin-bottom: 10px;
+}
+
+.header-social__item:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
