@@ -1,0 +1,117 @@
+.logo {
+  margin-right: 190px;
+}
+
+.navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 128px;
+}
+
+.navbar-navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-navmenu__item {
+  margin-right: 40px;
+}
+
+.navbar-navmenu__item:last-child {
+  margin-right: 0;
+}
+
+.navbar-navmenu__link {
+  color: rgba(11, 12, 17, 0.9);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700px;
+  line-height: 1px;
+  letter-spacing: 1.5px;
+}
+
+body {
+  background-image: url("../img/bg/bg-lines.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: initial;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hero-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hero-slider__item {
+  position: relative;
+  width: 1016px;
+  height: 572px;
+  background-image: url("/img/img/img-header.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.hero-slider__headtitle {
+  color: #5da8ef;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 5.4px;
+  font-weight: 700;
+  font-size: 9px;
+  margin-bottom: 22px;
+}
+
+.hero-slider__title {
+  color: #0b0c11;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700px;
+  font-size: 62px;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.hero-slider__subtitle {
+  color: #8f8f8f;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.35px;
+}
+
+.hero-slider__text {
+  position: absolute;
+  left: -200px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*# sourceMappingURL=style.css.map */
