@@ -104,7 +104,7 @@ li {
   position: relative;
   width: 1016px;
   height: 572px;
-  background-image: url("/img/img/img-header.jpg");
+  background-image: url("../img/img/img-header.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
