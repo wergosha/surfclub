@@ -1,0 +1,37 @@
+
+.club-description {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+    }
+    &__video {
+        position: absolute;
+        right: 0;
+        top: 43px;
+        z-index: 1;
+    }
+    &__text {
+        width: 400px;
+        height: 60px;
+        opacity: 0.65;
+        color: #616161;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.35px;
+        margin-bottom: 45px;
+        margin-top: 45px;
+        margin-left: 115px;
+    }
+    &__link {
+        margin-top: 45px;
+        margin-left: 115px;
+        
+    }
+}

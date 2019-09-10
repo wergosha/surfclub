@@ -1,0 +1,76 @@
+.shop {
+    padding-top: 95px;
+    &-slider {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        &-item {
+            position: relative;
+            width: 350px;
+            height: 435px;           
+            &__board-desc {
+                width: 190px;
+                position: absolute;
+                top: 196px;
+                left: 216px;
+            }
+            &__type {
+                color: #7a7a7a;
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 12px;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 2.4px;
+            }
+            &__name {
+                color: #333333;
+                font-family: 'Playfair Display', serif;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0.26px;
+                margin-bottom: 35px;
+            }
+            &__buy {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                width: 150px;
+                &-price {
+                    width: 49px;
+                    height: 18px;
+                    color: #ce60a8;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: -0.1px;
+                }
+                &-link {
+                    color: #333333;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 9px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+            &__img {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                &-holder {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 250px;
+                    height: 320px;
+                    background-color: #ececec;     
+                }
+            }
+        }
+    }
+}

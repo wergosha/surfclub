@@ -1,5 +1,5 @@
-//font-family: 'Noto Sans', sans-serif;
-//font-family: 'Montserrat', sans-serif;
+//font-family: 'Noto Sans', sans-serif; as poppins
+//font-family: 'Montserrat', sans-serif; as league spartan
 //font-family: 'Playfair Display', serif;
 //font-family: 'Fira Sans', sans-serif;
 
@@ -12,3 +12,12 @@
 
 //хедер
 @import 'blocks/header';
+
+//блок с цитатой
+@import 'blocks/quote';
+
+//описание клуба
+@import 'blocks/description';
+
+//описание клуба
+@import 'blocks/shop';

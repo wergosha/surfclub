@@ -21,27 +21,50 @@ a {
 li {
     list-style: none;
 }
-.relative {
+
+.read-more-link {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     position: relative;
+    padding-bottom: 10px;
+    &:after {
+        content: '';
+        height: 2px;
+        width: 97px;
+        background-color: #5da8ef;
+        opacity: 0.7;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
 }
-.side-content {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    right: -50px;
-    top: 58px;
-        &__item {
-            color: rgba(11, 12, 17, 0.2);
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 1;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transform: rotate(-90deg) translate(-2000%, 0);
-            position: absolute;
-            left: 0;
-            right: 0;
-            transform-origin: left top;
-        }
+
+.title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    text-align: center;
+    .subtitle {
+        display: block;
+        color: #5da8ef;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
+
+.show-link-wrapper {
+    display: flex;
+    justify-content: center;
 }
