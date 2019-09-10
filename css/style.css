@@ -76,13 +76,13 @@ li {
 .side-content__item {
   color: rgba(11, 12, 17, 0.2);
   font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
-  -webkit-transform: rotate(-90deg) translate(-1600%, 0);
-          transform: rotate(-90deg) translate(-1600%, 0);
+  -webkit-transform: rotate(-90deg) translate(-2000%, 0);
+          transform: rotate(-90deg) translate(-2000%, 0);
   position: absolute;
   left: 0;
   right: 0;
@@ -118,7 +118,7 @@ li {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 5.4px;
   font-weight: 700;
-  font-size: 9px;
+  font-size: 12px;
   margin-bottom: 22px;
 }
 
