@@ -1,5 +1,27 @@
 .logo {
-    margin-right: 190px;
+    &-wrapper {
+        display: flex;
+        margin-top: 24px;
+        margin-bottom: 22px;
+    }
+    &-text {
+        color: #5da8ef;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 5.4px;
+        font-weight: 700;
+        line-height: 16px;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    &-img {
+        width: 16px;
+        height: 44px;
+        margin-right: 5px;
+        background-image: url('../img/logo/logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .navbar {
@@ -11,6 +33,7 @@
     &-navmenu {
         display: flex;
         margin: 0;
+        margin-left: 33px;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;

@@ -5,7 +5,7 @@
         position: relative;
         &__item {
             position: relative;
-            width: 1016px;
+            width: 1015px;
             height: 572px;
             background-image: url('../img/img/img-header.jpg');
             background-repeat: no-repeat;
@@ -123,3 +123,22 @@
         transform-origin: left top;
     }
 }
+
+@media (max-width: 1400px) {
+    .header {
+        &-social {
+           right: 30px;
+           bottom: 30px; 
+        }
+    }
+    .side {
+        &-content {
+            right: 30px;
+            top: 170px;
+            &__item {
+                color: #fff;
+            }
+        }
+    }
+}
+
