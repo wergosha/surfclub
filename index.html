@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:400,700|Noto+Sans|Playfair+Display:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Surfway Club Magazine</title>
 </head>
 <body>
-    <header class="container headrelative">
+    <header class="headrelative container">
         <nav class="navbar-wrapper">
             <a href="#!" class="logo">
                 <div class="logo-wrapper">
@@ -26,22 +28,61 @@
             </ul>
         </nav>
         <div class="hero-wrapper">
-                <div class="hero-slider">
-                    <div class="hero-slider__item slider-item">
-                        <div class="hero-slider__text slider-item__text">
-                            <span class="hero-slider__headtitle slider-item__headtitle">Ваша</span>
-                            <h2 class=" hero-slider__title slider-item__title">Лучшая Волна</h2>
-                            <span class="hero-slider__subtitle slider-item__subtitle">Одна из самых удивительных мыслей о серфинге<br> это то, что вам нужны всего три вещи:<br> ваше тело, ваша доска для серфинга<br>  и волна.</span>
-                        </div>  
+            <div id="headerSlider" class="owl-carousel ">
+                <div class="hero-slider__item container">
+                    <div class="hero-slider__text">
+                        <span class="hero-slider__headtitle ">Ваша</span>
+                        <h2 class=" hero-slider__title ">Лучшая Волна</h2>
+                        <span class="hero-slider__subtitle ">Одна из самых удивительных мыслей о серфинге<br> это то, что вам нужны всего три вещи:<br> ваше тело, ваша доска для серфинга<br>  и волна.</span>
+                    </div> 
+                    <div class="hero-slider__item-img"></div>  
+                </div>    
+                <div class="hero-slider__item  container">
+                    <div class="hero-slider__text ">
+                        <span class="hero-slider__headtitle ">Ваша</span>
+                        <h2 class=" hero-slider__title ">Лучшая Волна</h2>
+                        <span class="hero-slider__subtitle ">Одна из самых удивительных мыслей о серфинге<br> это то, что вам нужны всего три вещи:<br> ваше тело, ваша доска для серфинга<br>  и волна.</span>
                     </div>
+                    <div class="hero-slider__item-img"></div>  
+                </div>
+                <div class="hero-slider__item container">
+                    <div class="hero-slider__text">
+                        <span class="hero-slider__headtitle ">Ваша</span>
+                        <h2 class=" hero-slider__title ">Лучшая Волна</h2>
+                        <span class="hero-slider__subtitle ">Одна из самых удивительных мыслей о серфинге<br> это то, что вам нужны всего три вещи:<br> ваше тело, ваша доска для серфинга<br>  и волна.</span>
+                    </div> 
+                    <div class="hero-slider__item-img"></div>  
+                </div>
+                <div class="hero-slider__item container">
+                    <div class="hero-slider__text ">
+                        <span class="hero-slider__headtitle ">Ваша</span>
+                        <h2 class=" hero-slider__title ">Лучшая Волна</h2>
+                        <span class="hero-slider__subtitle">Одна из самых удивительных мыслей о серфинге<br> это то, что вам нужны всего три вещи:<br> ваше тело, ваша доска для серфинга<br>  и волна.</span>
+                    </div>
+                    <div class="hero-slider__item-img"></div>   
+                </div>
+                <div class="hero-slider__item container">
+                    <div class="hero-slider__text">
+                        <span class="hero-slider__headtitle">Ваша</span>
+                        <h2 class=" hero-slider__title">Лучшая Волна</h2>
+                        <span class="hero-slider__subtitle ">Одна из самых удивительных мыслей о серфинге<br> это то, что вам нужны всего три вещи:<br> ваше тело, ваша доска для серфинга<br>  и волна.</span>
+                    </div> 
+                    <div class="hero-slider__item-img"></div>  
+                </div>
+            </div>
+                <div class="hero-slider">
                     <div class="hero-slider__control">
-                        <a class="hero-slider__left" href="#!"><img src="img/controls/Left.png" alt="left"></a>
+                        <a id="headerSliderLeft" class="hero-slider__left" href="#!">
+                            <img src="img/controls/Left.png" alt="left">
+                        </a>
                         <div class="slider-control__number">
-                            <span class="slider-control__number-active">1</span>
+                            <span class="slider-control__number-active"></span>
                             <span class="slider-control__number-from">/</span> 
-                            <span class="slider-control__number-total">5</span>
+                            <span class="slider-control__number-total"></span>
                         </div> 
-                        <a class="hero-slider__right" href="#!"><img src="img/controls/Right.png" alt="right"></a>
+                        <a id="headerSliderRight" class="hero-slider__right" href="#!">
+                            <img src="img/controls/Right.png" alt="right">
+                        </a>
                     </div>
                 </div>
         </div>
@@ -90,54 +131,69 @@
                 <span class="subtitle">Магазин</span>
                 Доски для серфинга
             </h2>
-            <div class="shop-slider">
-                <div class="shop-slider-item">
-                    <div class="shop-slider-item__plate"></div>
-                    <div class="shop-slider-item__img-holder">
-                        <img class="shop-slider-item__img" src="img/boards/board-1.png" alt="Доска для серфинга">
-                    </div>
-                    <div class="shop-slider-item__board-desc">
-                        <div class="shop-slider-item__type">Funboard</div>
-                        <div class="shop-slider-item__name">Chilli Rare Bird</div>
-                        <div class="shop-slider-item__buy">
-                            <div class="shop-slider-item__buy-price">$890</div>
-                            <div class="shop-slider-item__buy-link">Купить</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shop-slider-item">
-                    <div class="shop-slider-item__plate"></div>
-                    <div class="shop-slider-item__img-holder">
-                        <img class="shop-slider-item__img" src="img/boards/board-2.png" alt="Доска для серфинга">
-                    </div>
-                    <div class="shop-slider-item__board-desc">
-                        <div class="shop-slider-item__type">Surfboard</div>
-                        <div class="shop-slider-item__name">Emery NEM XF</div>
-                        <div class="shop-slider-item__buy">
-                            <div class="shop-slider-item__buy-price">$950</div>
-                            <div class="shop-slider-item__buy-link">Купить</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shop-slider-item">
-                    <div class="shop-slider-item__plate"></div>
-                    <div class="shop-slider-item__img-holder">
-                        <img class="shop-slider-item__img" src="img/boards/board-3.png" alt="Доска для серфинга">
-                    </div>
-                    <div class="shop-slider-item__board-desc">
-                        <div class="shop-slider-item__type">Surfboard</div>
-                        <div class="shop-slider-item__name">Agency GROM</div>
-                        <div class="shop-slider-item__buy">
-                            <div class="shop-slider-item__buy-price">$670</div>
-                            <div class="shop-slider-item__buy-link">Купить</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="show-link-wrapper">
-                <a href="" class="read-more-link">Показать все</a>
-            </div>
         </div> 
+        <div class="container shop-slider-wrapper">
+            <div class="shop-slider-special-holder">
+                <div id="shopSlider" class="owl-carousel">
+                    <div class="shop-slider-item">
+                        <div class="shop-slider-item__plate"></div>
+                        <div class="shop-slider-item__img-holder">
+                            <img class="shop-slider-item__img" src="img/boards/board-1.png" alt="Доска для серфинга">
+                        </div>
+                        <div class="shop-slider-item__board-desc">
+                            <div class="shop-slider-item__type">Funboard</div>
+                            <div class="shop-slider-item__name">Chilli Rare Bird</div>
+                            <div class="shop-slider-item__buy">
+                                <div class="shop-slider-item__buy-price">$890</div>
+                                <div class="shop-slider-item__buy-link">Купить</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-slider-item">
+                        <div class="shop-slider-item__plate"></div>
+                        <div class="shop-slider-item__img-holder">
+                            <img class="shop-slider-item__img" src="img/boards/board-2.png" alt="Доска для серфинга">
+                        </div>
+                        <div class="shop-slider-item__board-desc">
+                            <div class="shop-slider-item__type">Surfboard</div>
+                            <div class="shop-slider-item__name">Emery NEM XF</div>
+                            <div class="shop-slider-item__buy">
+                                <div class="shop-slider-item__buy-price">$950</div>
+                                <div class="shop-slider-item__buy-link">Купить</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-slider-item">
+                        <div class="shop-slider-item__plate"></div>
+                        <div class="shop-slider-item__img-holder">
+                            <img class="shop-slider-item__img" src="img/boards/board-3.png" alt="Доска для серфинга">
+                        </div>
+                        <div class="shop-slider-item__board-desc">
+                            <div class="shop-slider-item__type">Surfboard</div>
+                            <div class="shop-slider-item__name">Agency GROM</div>
+                            <div class="shop-slider-item__buy">
+                                <div class="shop-slider-item__buy-price">$670</div>
+                                <div class="shop-slider-item__buy-link">Купить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="shopSlider-controls">
+                <div class="shopSlider-Left shopSlider-arrow" id="shopSliderLeft">
+                    <img src="img/controls/Left.png" alt="Предыдущий">
+                </div>
+                <div class="shopSlider-Right shopSlider-arrow" id="shopSliderRight">
+                    <img src="img/controls/Right.png" alt="Следующий">
+                </div>
+            </div>
+        </div>
+        <div class="show-link-wrapper">
+            <a href="" class="read-more-link">Показать все</a>
+        </div>
+        
 
     </section>
     <section class="articles">
@@ -231,5 +287,10 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/hero-slider.js"></script>
+    <script src="js/shop-slider.js"></script>
 </body>
 </html>

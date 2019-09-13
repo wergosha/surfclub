@@ -68,7 +68,7 @@ body {
   background-image: url("../img/bg/bg-lines.png");
   background-repeat: repeat;
   background-position: center;
-  background-size: initial;
+  background-size: auto;
   font-family: sans-serif;
 }
 
@@ -181,26 +181,50 @@ li {
   letter-spacing: 0.35px;
 }
 
-.hero-slider {
+#headerSlider.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.hero-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.hero-slider__right {
+  cursor: pointer;
+}
+
+.hero-slider__left {
+  cursor: pointer;
+}
+
+.hero-slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
 }
 
-.hero-slider__item {
-  position: relative;
-  width: 1015px;
+.hero-slider__item-img {
+  width: 1016px;
   height: 572px;
   background-image: url("../img/img/img-header.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  -webkit-box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
-          box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
+  -webkit-box-shadow: -16px 15px 15px rgba(11, 12, 17, 0.1);
+          box-shadow: -16px 15px 15px rgba(11, 12, 17, 0.1);
+}
+
+.hero-slider__text {
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .hero-slider__headtitle {
@@ -230,14 +254,6 @@ li {
   letter-spacing: 0.35px;
 }
 
-.hero-slider__text {
-  position: absolute;
-  left: -200px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .hero-slider__control {
   position: absolute;
   display: -webkit-box;
@@ -249,9 +265,10 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 81px;
-  bottom: 0;
+  width: 100px;
+  bottom: 47px;
   left: 0;
+  z-index: 9;
 }
 
 .hero-slider .slider-control__number {
@@ -280,7 +297,7 @@ li {
   width: 5px;
   position: absolute;
   right: -45px;
-  bottom: 0;
+  bottom: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,11 +354,13 @@ li {
 @media (max-width: 1400px) {
   .header-social {
     right: 30px;
-    bottom: 30px;
+    bottom: 80px;
+    z-index: 99;
   }
   .side-content {
     right: 30px;
     top: 170px;
+    z-index: 99;
   }
   .side-content__item {
     color: #fff;
@@ -349,7 +368,6 @@ li {
 }
 
 .quote {
-  padding-top: 95px;
   padding-bottom: 95px;
 }
 
@@ -443,11 +461,11 @@ li {
   right: 0;
   width: 100%;
   height: 984px;
-  z-index: -99;
-  background-image: url("../img/bg/bg-water.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  z-index: -1;
+  background-image: url("../img/bg/bg-lines.png"), url("../img/bg/bg-water.jpg");
+  background-repeat: repeat-y, no-repeat;
+  background-position: center, center;
+  background-size: auto, cover;
 }
 
 .shop-slider {
@@ -462,10 +480,23 @@ li {
   margin-bottom: 80px;
 }
 
+.shop-slider-special-holder {
+  position: absolute;
+  left: 0;
+  right: -85px;
+}
+
+.shop-slider-wrapper {
+  height: 565px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
 .shop-slider-item {
   position: relative;
-  width: 350px;
+  width: 435px;
   height: 435px;
+  margin-top: 120px;
 }
 
 .shop-slider-item__board-desc {
@@ -543,6 +574,31 @@ li {
   width: 250px;
   height: 320px;
   background-color: #ececec;
+}
+
+.shopSlider-controls {
+  position: relative;
+}
+
+.shopSlider-arrow {
+  width: 40px;
+  padding: 15px;
+  position: absolute;
+  bottom: calc(120px + 80px);
+  z-index: 12;
+  cursor: pointer;
+}
+
+.shopSlider-Left {
+  left: -70px;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.shopSlider-Right {
+  right: -70px;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
 }
 
 .article-01 {
@@ -708,10 +764,10 @@ li {
   width: 100%;
   height: 1335px;
   z-index: -99;
-  background-image: url("../img/bg/bg-surfer.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/bg/bg-lines.png"), url("../img/bg/bg-surfer.jpg");
+  background-repeat: repeat-y, no-repeat;
+  background-position: center, center;
+  background-size: auto, cover;
 }
 
 .subscribe-form {

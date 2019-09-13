@@ -1,17 +1,40 @@
+#headerSlider.owl-carousel {
+    .owl-stage-outer {
+        overflow: visible;
+    }
+}
+
 .hero {
+    &-wrapper {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
     &-slider {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
+        &__right {
+            cursor: pointer;
+        }
+        &__left {
+            cursor: pointer;
+        }
         &__item {
-            position: relative;
-            width: 1015px;
-            height: 572px;
-            background-image: url('../img/img/img-header.jpg');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            box-shadow: -16px 25px 65px rgba(11,12, 17, 0.2);            
+            display: flex;
+            justify-content: flex-end;
+            &-img {
+                width: 1016px;
+                height: 572px;
+                background-image: url('../img/img/img-header.jpg');
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
+                box-shadow: -16px 15px 15px rgba(11, 12, 17, 0.1);  
+            }          
+        }
+        &__text {
+            position: absolute;
+            left: 1px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &__headtitle {
             color: #5da8ef;
@@ -30,7 +53,6 @@
             margin-bottom: 22px;
             margin-top: 0;
         }
-
         &__subtitle {
             color: #8f8f8f;
             font-family: 'Noto Sans', sans-serif;
@@ -38,20 +60,15 @@
             font-weight: 300;
             letter-spacing: 0.35px;
         }
-        &__text {
-            position: absolute;
-            left: -200px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
         &__control {
             position: absolute;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 81px;
-            bottom: 0;
+            width: 100px;
+            bottom: 47px;
             left: 0;
+            z-index: 9;
         }
         .slider {
             &-control {
@@ -84,7 +101,7 @@
         width: 5px;
         position: absolute;
         right: -45px;
-        bottom: 0;
+        bottom: 46px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -128,13 +145,15 @@
     .header {
         &-social {
            right: 30px;
-           bottom: 30px; 
+           bottom: 80px; 
+           z-index: 99;
         }
     }
     .side {
         &-content {
             right: 30px;
             top: 170px;
+            z-index: 99;
             &__item {
                 color: #fff;
             }
